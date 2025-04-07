@@ -1,14 +1,11 @@
 import time
-#Determinar si la temperatura ingresada por el ususario es Celsius, Fahrenheir o Kelvin y a cual la desea cambiar
 
 temperatura = float(input("Ingrese una temperatura por favor:"))
 escala = input("Es Celsius (C) o Fahrenheit (F) o Kelvin (K)?").lower()
 cambio = input("A que escala lo deseas cambiar, Celsius , Fahrenheir o Kelvin ").lower()
-#Funcion para pasar temperatura a la deseado por el usuario
 
 print("Cargando...")
 time.sleep(2)
-
 if escala == "f":
     celsius = (temperatura - 32) * 5/9
     kelvin = (temperatura - 32) / 1.8 + 273.15
