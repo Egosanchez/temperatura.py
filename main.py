@@ -35,5 +35,3 @@ for i, temperatura in enumerate(temperaturas, start=1):
         print(f" ¡Alerta! El día {i} tuvo una temperatura de {temperatura}°C (mayor a 40°C).")
         alerta = True
 
-if not alerta:
-    print(" Ningún día superó los 40°C. No se detectaron alertas de calor extremo.")
